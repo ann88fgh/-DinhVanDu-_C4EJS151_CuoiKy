@@ -39,7 +39,7 @@ const showRandomImages = () => {
           image.appendChild(imgElement);
           imageContainer.appendChild(image);
       }
-  }, 100); // Quay với tần suất 100ms
+  }, 100); 
 
   setTimeout(() => {
     clearInterval(rollInterval);
@@ -47,32 +47,7 @@ const showRandomImages = () => {
 }
 showRandomImages();
 
-// const showRandomImages = () => {
-//   const imageContainer = document.getElementById('image-container');
-//   const randomImages = new Set();
-//   while (imageContainer.firstChild) {
-//     imageContainer.removeChild(imageContainer.firstChild);
-// }
-//   while (randomImages.size < 3){
-//     const randomImage = Math.floor(Math.random() * img.length);
-//     randomImages.add(randomImage);
-//   }
 
-//   for ( const randomImage of randomImages) {
-//     const image = document.createElement('div');
-//     image.classList.add('image');
-//     const imgg = document.createElement('img');
-//     imgg.src = img[randomImage];
-//     image.appendChild(imgg);
-//     imageContainer.appendChild(imgg)
-//   }
-// };
-
-// const intervalId = setInterval(showRandomImages, 100)
-
-// setTimeout(() =>{
-//   clearInterval(intervalId);
-// }, 2000);
 
 
 
